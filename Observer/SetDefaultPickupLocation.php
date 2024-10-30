@@ -1,5 +1,5 @@
 <?php
-namespace Musicworld\DefaultPickupLocation\Observer;
+namespace Musicworld\DefaultInStorePickupLocation\Observer;
 
 use Magento\Store\Model\ScopeInterface;
 use Psr\Log\LoggerInterface;
