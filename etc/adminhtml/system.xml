@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="musicworld" translate="label" sortOrder="799">
+            <label>Musicworld Extensions</label>
+        </tab>
+        <section id="default_pickup_location" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="0">
+            <label>Default Pickup Location</label>
+            <tab>musicworld</tab>
+            <resource>Musicworld_DefaultInStorePickupLocation::musicworld_defaultpickup</resource>
+            <group id="configuration" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
+                <label>Default Pickup Location Code</label>
+                <field id="pickup_location_code" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Default Pickup Location Code</label>
+                    <source_model>Musicworld\DefaultInStorePickupLocation\Model\Config\Source\PickupLocations</source_model>
+                    <comment>Default Pickup Store Code for Magento In-Store Pickup (MultiSourceInventory)</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
