@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <type name="Musicworld\DefaultPickupLocation\Observer\SetDefaultPickupLocation">
+    <type name="Musicworld\DefaultInStorePickupLocation\Observer\SetDefaultPickupLocation">
         <arguments>
             <argument name="getPickupLocations" xsi:type="object">Magento\InventoryInStorePickupApi\Api\GetPickupLocationsInterface</argument>
             <argument name="searchRequestFactory" xsi:type="object">Magento\InventoryInStorePickupApi\Api\Data\SearchRequestInterfaceFactory</argument>
